@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wotx"
+version = "0.1.0"
+description = "Extensions to Broad WOT: modified OTModel + weighted OT solvers"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Your Name"}]
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.22",
+  "scipy>=1.9",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "anndata>=0.9",
+  "scanpy>=1.9",
+  "matplotlib>=3.6",
+  "seaborn>=0.12",
+  "wot>=1.0.8",                # keep using wot’s other features
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

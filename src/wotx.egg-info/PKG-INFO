@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: wotx
+Version: 0.1.0
+Summary: Extensions to Broad WOT: modified OTModel + weighted OT solvers
+Author: Your Name
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22
+Requires-Dist: scipy>=1.9
+Requires-Dist: pandas>=1.5
+Requires-Dist: scikit-learn>=1.2
+Requires-Dist: anndata>=0.9
+Requires-Dist: scanpy>=1.9
+Requires-Dist: matplotlib>=3.6
+Requires-Dist: seaborn>=0.12
+Requires-Dist: wot>=1.0.8
+
+Here I have the edited code with changes made to the original optimal transport code
+and the WOT library. The main aspects are addind plots for debugging the loss function, adding
+the ability to change the default cost matrix and option to strictly enforce marginals
